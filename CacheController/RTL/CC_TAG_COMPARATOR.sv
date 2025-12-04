@@ -13,7 +13,7 @@ module CC_TAG_COMPARATOR
 	output	wire	[5:0]	offset_delayed_o,
 
 	input	wire			hs_pulse_i,
-	input   wire    [18:0]  rdata_tag_i
+	input   wire    [18:0]  rdata_tag_i,
 	output	wire			hit_o,
 	output	wire			miss_o,
 
