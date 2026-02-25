@@ -2,7 +2,7 @@
 
 ## 1. 프로젝트 소개
 
-**AXI Read 요청(AR/R 채널)**을 처리하는 **2-way read-only 캐시 컨트롤러** 설계 프로젝트입니다.  
+**AXI Read 요청**을 처리하는 **2-way read-only 캐시 컨트롤러** 설계 프로젝트입니다.  
 요청 주소를 `Tag / Index / Offset`으로 분해해 **SRAM(Tag/Data array)**에서 hit/miss를 판정하고, miss 시에는 **메모리로 64B WRAP burst read(8 beats)**를 발행해 데이터를 받아오며, 이를 **프로세서에 전송 및 캐시 라인 fill**을 수행합니다.  
 또한 hit 응답이 miss 응답보다 빨라서 발생할 수 있는 **out-of-order 응답 문제를 Reorder 구조로 해결**해, **항상 프로세서의 요청 순서대로(in-order) R 응답**이 나가도록 설계했습니다.
 
