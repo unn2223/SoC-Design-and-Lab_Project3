@@ -18,6 +18,18 @@ module CC_DECODER
 	output	wire			hs_pulse_o
 );
 
+	assign tag_o    = inct_araddr_i[31:14];
+    assign index_o  = inct_araddr_i[13:6];
+    assign offset_o = inct_araddr_i[5:0];
+
+    wire stall;
+    assign stall = miss_addr_fifo_afull_i |
+                   miss_req_fifo_afull_i  |
+                   hit_flag_fifo_afull_i  |
+                   hit_data_fifo_afull_i;
+
+    assign inct_arready_o = ~stall;
+    assign hs_pulse_o     = inct_arvalid_i & inct_arready_o;
 	// Fill the code here
 
 endmodule

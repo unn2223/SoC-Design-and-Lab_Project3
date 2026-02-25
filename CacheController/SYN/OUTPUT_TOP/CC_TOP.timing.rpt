@@ -1,0 +1,608 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : CC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Feb 25 19:55:11 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P81V125C   Library: um28nchllogl35udl140f_ssgwc0p81v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[293]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U928/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[293] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[293] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[290]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U922/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[290] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[290] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[288]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U918/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[288] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[288] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[283]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U908/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[283] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[283] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[282]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U906/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[282] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[282] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[280]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U902/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[280] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[280] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[279]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U900/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[279] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[279] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[273]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U888/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[273] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[273] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[270]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U882/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[270] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[270] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rdata_tag0_i[13]
+              (input port clocked by clk)
+  Endpoint: wdata_data_o[256]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CC_TOP             ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_TAG_COMPARATOR_1
+                     ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+  CC_DATA_FILL_UNIT  ZeroWLM               um28nchllogl35udl140f_ssgwc0p81v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rdata_tag0_i[13] (in)                                   0.00       1.00 r
+  u_cmp0/rdata_tag_i[13] (CC_TAG_COMPARATOR_1)            0.00       1.00 r
+  u_cmp0/U29/X (SVQ_EO2_V2_1)                             0.03       1.03 r
+  u_cmp0/U25/X (SVQ_ND4_1)                                0.03       1.06 f
+  u_cmp0/U4/X (SVQ_NR3_G_1)                               0.03       1.09 r
+  u_cmp0/U18/X (SVQ_ND2_1)                                0.02       1.11 f
+  u_cmp0/U6/X (SVQ_NR2_T_1)                               0.02       1.13 r
+  u_cmp0/hit_o (CC_TAG_COMPARATOR_1)                      0.00       1.13 r
+  U1347/X (SVQ_ND2B_V1_1)                                 0.02       1.15 r
+  U2646/X (SVQ_OR2_1)                                     0.03       1.18 r
+  U1346/X (SVQ_ND2B_4)                                    0.03       1.21 r
+  U1345/X (SVQ_INV_S_2)                                   0.01       1.22 f
+  U1344/X (SVQ_MUX2_4)                                    0.05       1.27 r
+  u_fill/miss_addr_fifo_rdata_i[4] (CC_DATA_FILL_UNIT)
+                                                          0.00       1.27 r
+  u_fill/U67/X (SVQ_INV_1)                                0.02       1.29 f
+  u_fill/U196/X (SVQ_MUX2_1)                              0.04       1.34 f
+  u_fill/U106/X (SVQ_EO3_1)                               0.09       1.42 f
+  u_fill/U339/X (SVQ_INV_S_2)                             0.03       1.45 r
+  u_fill/U3/X (SVQ_OR2_2)                                 0.03       1.48 r
+  u_fill/U59/X (SVQ_NR2B_V1_2)                            0.01       1.49 f
+  u_fill/U60/X (SVQ_INV_2)                                0.01       1.50 r
+  u_fill/U57/X (SVQ_INV_S_2)                              0.04       1.54 f
+  u_fill/U854/X (SVQ_MUX2_1)                              0.06       1.60 r
+  u_fill/wdata_data_o[256] (CC_DATA_FILL_UNIT)            0.00       1.60 r
+  wdata_data_o[256] (out)                                 0.00       1.60 r
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -1.40       2.60
+  output external delay                                  -1.00       1.60
+  data required time                                                 1.60
+  --------------------------------------------------------------------------
+  data required time                                                 1.60
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,41 @@
+ 
+****************************************
+Report : resources
+Design : CC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Feb 25 19:55:27 2026
+****************************************
+
+Resource Sharing Report for design CC_TOP in file
+        /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r135     | DW01_dec     | width=5    |               | sub_429 sub_436      |
+| r174     | DW01_cmp6    | width=26   |               | eq_403               |
+| r176     | DW01_cmp6    | width=26   |               | eq_405               |
+| r178     | DW01_inc     | width=4    |               | add_421              |
+| r180     | DW01_cmp2    | width=4    |               | lt_450               |
+| r182     | DW01_cmp6    | width=26   |               | eq_451               |
+| r184     | DW01_cmp2    | width=4    |               | lt_450_I2            |
+| r186     | DW01_cmp6    | width=26   |               | eq_451_I2            |
+| r188     | DW01_cmp2    | width=4    |               | lt_450_I3            |
+| r190     | DW01_cmp6    | width=26   |               | eq_451_I3            |
+| r192     | DW01_cmp2    | width=4    |               | lt_450_I4            |
+| r194     | DW01_cmp6    | width=26   |               | eq_451_I4            |
+| r196     | DW01_cmp2    | width=4    |               | lt_450_I5            |
+| r198     | DW01_cmp6    | width=26   |               | eq_451_I5            |
+| r200     | DW01_cmp2    | width=4    |               | lt_450_I6            |
+| r202     | DW01_cmp6    | width=26   |               | eq_451_I6            |
+| r204     | DW01_cmp2    | width=4    |               | lt_450_I7            |
+| r206     | DW01_cmp6    | width=26   |               | eq_451_I7            |
+| r208     | DW01_cmp2    | width=4    |               | lt_450_I8            |
+| r210     | DW01_cmp6    | width=26   |               | eq_451_I8            |
+| r212     | DW01_cmp6    | width=26   |               | eq_456               |
+===============================================================================
+
+
+No implementations to report
+1

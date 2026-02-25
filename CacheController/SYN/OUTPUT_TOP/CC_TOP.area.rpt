@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : area
+Design : CC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Feb 25 19:55:09 2026
+****************************************
+
+Library(s) Used:
+
+    um28nchllogl35udl140f_ssgwc0p81v125c (File: /home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db)
+
+Number of ports:                         5578
+Number of nets:                        108437
+Number of cells:                       103642
+Number of combinational cells:          67688
+Number of sequential cells:             35937
+Number of macros/black boxes:               0
+Number of buf/inv:                       4962
+Number of references:                      59
+
+Combinational area:              36609.762088
+Buf/Inv area:                     1233.525987
+Noncombinational area:           56349.214526
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 92958.976615
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------------------------
+CC_TOP                            92958.9766    100.0    976.7660    428.0640  0.0000  CC_TOP
+u_cfg                                14.3080      0.0      6.4680      7.8400  0.0000  CC_CFG
+u_cmp0                               94.5700      0.1     42.8260     51.7440  0.0000  CC_TAG_COMPARATOR_1
+u_cmp1                               96.2360      0.1     44.4920     51.7440  0.0000  CC_TAG_COMPARATOR_0
+u_decoder                             0.8820      0.0      0.8820      0.0000  0.0000  CC_DECODER
+u_fill                             1716.9600      1.8    839.1740    854.5600  0.0000  CC_DATA_FILL_UNIT
+u_fill/u_cc_way                      23.2260      0.0      9.1140     14.1120  0.0000  CC_WAY
+u_id_fifo                           252.6440      0.3    125.6360    127.0080  0.0000  CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0
+u_miss_addr_fifo                    692.8600      0.7    269.5000    423.3600  0.0000  CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0_0
+u_miss_req_fifo                     692.8600      0.7    269.5000    423.3600  0.0000  CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0_1
+u_reorder                         87992.8267     94.7    151.6060    109.7600  0.0000  CC_DATA_REORDER_UNIT
+u_reorder/u_hit_data_fifo         42187.2354     45.4  16164.7081  26022.5273  0.0000  CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0
+u_reorder/u_hit_flag_fifo           199.2340      0.2    117.6980     81.5360  0.0000  CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0
+u_reorder/u_miss_beat_fifo        43732.4014     47.0  16771.4261  26939.8073  0.0000  CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0
+u_reorder/u_miss_beat_fifo/add_70     7.0560      0.0      7.0560      0.0000  0.0000  CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_2_DW01_inc_11
+u_reorder/u_miss_beat_fifo/add_71     7.0560      0.0      7.0560      0.0000  0.0000  CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_1_DW01_inc_10
+u_reorder/u_miss_beat_fifo/add_75     7.0560      0.0      7.0560      0.0000  0.0000  CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_0_DW01_inc_9
+u_reorder/u_serializer             1612.5900      1.7    798.7980    813.7920  0.0000  CC_SERIALIZER
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------------------------
+Total                                                  36609.7621  56349.2145  0.0000
+
+1

@@ -1,0 +1,779 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# ---------------------------------------
+# Step 1: Specify libraries
+# ---------------------------------------
+set link_library [list /home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db ]
+/home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db
+set target_library [list /home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db ]
+/home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db
+# ---------------------------------------
+# Step 2: Read designs
+# ---------------------------------------
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_CFG.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_CFG.sv
+Presto compilation completed successfully.
+Loading db file '/home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db'
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_DATA_FILL_UNIT.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_DATA_FILL_UNIT.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_DATA_REORDER_UNIT.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_DATA_REORDER_UNIT.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_DECODER.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_DECODER.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_FIFO.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_FIFO.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_SERIALIZER.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_SERIALIZER.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_TAG_COMPARATOR.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TAG_COMPARATOR.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_TOP.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog $env(LAB_PATH)/RTL/CC_WAY.sv
+Running PRESTO HDLC
+Compiling source file /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_WAY.sv
+Presto compilation completed successfully.
+1
+set design_name         CC_TOP
+CC_TOP
+elaborate $design_name
+Loading db file '/INST/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db'
+Loading db file '/INST/syn/Q-2019.12-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'um28nchllogl35udl140f_ssgwc0p81v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv:450: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 361 in file
+	'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           365            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 377 in file
+	'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           382            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CC_TOP line 347 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| direct_hold_addr_reg  | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| direct_hold_valid_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine CC_TOP line 361 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| mem_outstanding_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine CC_TOP line 377 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    pend_line_reg    | Flip-flop |  26   |  Y  | N  | N  | N  | N  | N  | N  |
+|   pend_valid_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine CC_TOP line 411 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TOP.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   missq_line_reg    | Flip-flop |  208  |  Y  | N  | N  | N  | N  | N  | N  |
+|   missq_count_reg   | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CC_TOP)
+Elaborated 1 design.
+Current design is now 'CC_TOP'.
+Information: Building the design 'CC_CFG'. (HDL-193)
+
+Statistics for case statements in always block at line 20 in file
+	'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_CFG.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            25            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CC_CFG line 20 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_CFG.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      rdata_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CC_CFG)
+Information: Building the design 'CC_DATA_REORDER_UNIT'. (HDL-193)
+
+Statistics for case statements in always block at line 226 in file
+	'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_DATA_REORDER_UNIT.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           228            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine CC_DATA_REORDER_UNIT line 239 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_DATA_REORDER_UNIT.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   skid_last_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     state_q_reg     | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  skid_valid_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   skid_data_q_reg   | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|   skid_resp_q_reg   | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CC_DATA_REORDER_UNIT)
+Information: Building the design 'CC_FIFO' instantiated from design 'CC_TOP' with
+	the parameters "FIFO_DEPTH=8,DATA_WIDTH=32,AFULL_THRESHOLD=6,AEMPTY_THRESHOLD=0". (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0 line 37 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_FIFO.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      wrptr_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|      rdptr_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=============================================================================================================
+|                            block name/line                              | Inputs | Outputs | # sel inputs |
+=============================================================================================================
+| CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0/109 |   8    |   32    |      3       |
+=============================================================================================================
+Presto compilation completed successfully. (CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0)
+Information: Building the design 'CC_FIFO' instantiated from design 'CC_TOP' with
+	the parameters "FIFO_DEPTH=16,DATA_WIDTH=4,AFULL_THRESHOLD=14,AEMPTY_THRESHOLD=0". (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0 line 37 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_FIFO.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      wrptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      rdptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+==============================================================================================================
+|                             block name/line                              | Inputs | Outputs | # sel inputs |
+==============================================================================================================
+| CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0/109 |   16   |    4    |      4       |
+==============================================================================================================
+Presto compilation completed successfully. (CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0)
+Information: Building the design 'CC_DECODER'. (HDL-193)
+Presto compilation completed successfully. (CC_DECODER)
+Information: Building the design 'CC_TAG_COMPARATOR'. (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_TAG_COMPARATOR line 28 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_TAG_COMPARATOR.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      hs_d_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      tag_d_reg      | Flip-flop |  18   |  Y  | N  | N  | N  | N  | N  | N  |
+|     index_d_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|    offset_d_reg     | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CC_TAG_COMPARATOR)
+Information: Building the design 'CC_DATA_FILL_UNIT'. (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_DATA_FILL_UNIT line 74 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_DATA_FILL_UNIT.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   line_words_reg    | Flip-flop |  512  |  Y  | N  | N  | N  | N  | N  | N  |
+|     active_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    beat_cnt_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|    base_reg_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|     tag_reg_reg     | Flip-flop |  18   |  Y  | N  | N  | N  | N  | N  | N  |
+|    index_reg_reg    | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CC_DATA_FILL_UNIT)
+Information: Building the design 'CC_FIFO' instantiated from design 'CC_DATA_REORDER_UNIT' with
+	the parameters "FIFO_DEPTH=32,DATA_WIDTH=1,AFULL_THRESHOLD=30,AEMPTY_THRESHOLD=0". (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0 line 37 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_FIFO.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      wrptr_reg      | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      rdptr_reg      | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+==============================================================================================================
+|                             block name/line                              | Inputs | Outputs | # sel inputs |
+==============================================================================================================
+| CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0/109 |   32   |    1    |      5       |
+==============================================================================================================
+Presto compilation completed successfully. (CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0)
+Information: Building the design 'CC_FIFO' instantiated from design 'CC_DATA_REORDER_UNIT' with
+	the parameters "FIFO_DEPTH=32,DATA_WIDTH=518,AFULL_THRESHOLD=30,AEMPTY_THRESHOLD=0". (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0 line 37 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_FIFO.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop | 16576 |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      wrptr_reg      | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      rdptr_reg      | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+================================================================================================================
+|                              block name/line                               | Inputs | Outputs | # sel inputs |
+================================================================================================================
+| CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0/109 |   32   |   518   |      5       |
+================================================================================================================
+Presto compilation completed successfully. (CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0)
+Information: Building the design 'CC_FIFO' instantiated from design 'CC_DATA_REORDER_UNIT' with
+	the parameters "FIFO_DEPTH=256,DATA_WIDTH=67,AFULL_THRESHOLD=252,AEMPTY_THRESHOLD=0". (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0 line 37 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_FIFO.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop | 17152 |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      wrptr_reg      | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+|      rdptr_reg      | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=================================================================================================================
+|                              block name/line                                | Inputs | Outputs | # sel inputs |
+=================================================================================================================
+| CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0/109 |  256   |   67    |      8       |
+=================================================================================================================
+Presto compilation completed successfully. (CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0)
+Information: Building the design 'CC_SERIALIZER'. (HDL-193)
+Warning:  /home/SOC43/Project3/CacheController/SYN/..//RTL/CC_SERIALIZER.sv:38: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 34 in file
+	'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_SERIALIZER.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            38            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine CC_SERIALIZER line 67 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_SERIALIZER.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  base_word_buf_reg  | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|     state_q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   beat_cnt_q_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|    line_buf_reg     | Flip-flop |  512  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CC_SERIALIZER)
+Information: Building the design 'CC_WAY'. (HDL-193)
+
+Inferred memory devices in process
+	in routine CC_WAY line 16 in file
+		'/home/SOC43/Project3/CacheController/SYN/..//RTL/CC_WAY.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      wway_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      lfsr_reg       | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (CC_WAY)
+1
+# connect all the library components and designs
+link
+
+  Linking design 'CC_TOP'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  um28nchllogl35udl140f_ssgwc0p81v125c (library) /home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db
+
+1
+# renames multiply references designs so that each
+# instance references a unique design
+uniquify
+Information: Uniquified 2 instances of design 'CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0'. (OPT-1056)
+Information: Uniquified 2 instances of design 'CC_TAG_COMPARATOR'. (OPT-1056)
+1
+# ---------------------------------------
+# Step 3: Define design environments
+# ---------------------------------------
+#
+# ---------------------------------------
+# Step 4: Set design constraints
+# ---------------------------------------
+# ---------------------------------------
+# Clock
+# ---------------------------------------
+set clk_name clk
+clk
+set clk_freq            250
+250
+# Reduce clock period to model wire delay (60% of original period)
+set clk_period [expr 1000 / double($clk_freq)]
+4.0
+create_clock -period $clk_period $clk_name
+1
+set clk_uncertainty [expr $clk_period * 0.35]
+1.4
+set_clock_uncertainty -setup $clk_uncertainty $clk_name
+1
+# Set infinite drive strength
+set_drive 0 $clk_name
+1
+set_ideal_network rst_n
+1
+# ---------------------------------------
+# Input/Output
+# ---------------------------------------
+# Apply default timing constraints for modules
+set_input_delay  1.0 [all_inputs]  -clock $clk_name
+1
+set_output_delay 1.0 [all_outputs] -clock $clk_name
+1
+# ---------------------------------------
+# Area
+# ---------------------------------------
+# If max_area is set 0, DesignCompiler will minimize the design as small as possible
+set_max_area 0 
+1
+# ---------------------------------------
+# Step 5: Synthesize and optimzie the design
+# ---------------------------------------
+compile -map_effort high
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 169 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'CC_WAY'
+  Processing 'CC_DATA_FILL_UNIT'
+  Processing 'CC_TAG_COMPARATOR_0'
+  Processing 'CC_DECODER'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0'
+  Processing 'CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0_0'
+  Processing 'CC_SERIALIZER'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0'
+  Processing 'CC_DATA_REORDER_UNIT'
+  Processing 'CC_CFG'
+Information: The register 'rdata_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'rdata_reg[1]' is a constant and will be removed. (OPT-1206)
+  Processing 'CC_TOP'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'CC_TOP_DW01_cmp6_0_DW01_cmp6_3'
+  Processing 'CC_TOP_DW01_cmp6_1_DW01_cmp6_4'
+  Processing 'CC_TOP_DW01_cmp6_2_DW01_cmp6_5'
+  Processing 'CC_TOP_DW01_cmp6_3_DW01_cmp6_6'
+  Processing 'CC_TOP_DW01_cmp6_4_DW01_cmp6_7'
+  Processing 'CC_TOP_DW01_cmp6_5_DW01_cmp6_8'
+  Processing 'CC_TOP_DW01_cmp6_6_DW01_cmp6_9'
+  Processing 'CC_TOP_DW01_cmp6_7_DW01_cmp6_10'
+  Processing 'CC_TOP_DW01_cmp6_8_DW01_cmp6_11'
+  Processing 'CC_TOP_DW01_cmp6_9_DW01_cmp6_12'
+  Processing 'CC_TOP_DW01_cmp6_10_DW01_cmp6_13'
+  Processing 'CC_TOP_DW01_dec_0'
+  Processing 'CC_TAG_COMPARATOR_0_DW01_cmp6_0_DW01_cmp6_14'
+  Processing 'CC_TAG_COMPARATOR_1_DW01_cmp6_0_DW01_cmp6_15'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0_DW01_cmp6_0_DW01_cmp6_16'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0_DW01_cmp2_0_DW01_cmp2_10'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0_DW01_cmp2_1_DW01_cmp2_11'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0_DW01_sub_0_DW01_sub_1'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0_DW01_inc_0_DW01_inc_6'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0_DW01_inc_1_DW01_inc_7'
+  Processing 'CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0_DW01_inc_2_DW01_inc_8'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_cmp6_0_DW01_cmp6_17'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_cmp6_1_DW01_cmp6_18'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_cmp2_0_DW01_cmp2_12'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_cmp2_1_DW01_cmp2_13'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_sub_0_DW01_sub_2'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_0_DW01_inc_9'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_1_DW01_inc_10'
+  Processing 'CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_2_DW01_inc_11'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp6_0_DW01_cmp6_19'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp6_1_DW01_cmp6_20'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp2_0_DW01_cmp2_14'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp2_1_DW01_cmp2_15'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_sub_0_DW01_sub_3'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_inc_0_DW01_inc_12'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_inc_1_DW01_inc_13'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_inc_2_DW01_inc_14'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp6_0_DW01_cmp6_21'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp6_1_DW01_cmp6_22'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp2_0_DW01_cmp2_16'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_cmp2_1_DW01_cmp2_17'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_sub_0_DW01_sub_4'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_inc_0_DW01_inc_15'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_inc_1_DW01_inc_16'
+  Processing 'CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0_DW01_inc_2_DW01_inc_17'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:55  129134.2  13658.13 56299912.0 43574002.9                          
+    0:02:55  129134.2  13658.13 56299912.0 43574002.9                          
+    0:02:56  132760.2  13658.13 56299912.0 43574002.9                          
+    0:03:02  157190.4  13658.13 8330474.0 34474120.7                          
+    0:03:09  177029.0  13654.85 1297343.0 9219085.8                          
+    0:03:37  182102.8      0.00       0.0       0.0                          
+    0:03:38  182102.8      0.00       0.0       0.0                          
+    0:03:38  182102.8      0.00       0.0       0.0                          
+    0:03:38  182102.8      0.00       0.0       0.0                          
+    0:03:40  182102.8      0.00       0.0       0.0                          
+    0:04:27   97105.9      0.15      56.2       0.0                          
+    0:04:29   97111.0      0.10      32.9       0.0                          
+    0:04:38   97110.1      0.15      46.6       0.0                          
+    0:04:40   97109.4      0.10      43.6       0.0                          
+    0:04:51   97116.9      0.10      41.1       0.0                          
+    0:04:53   97113.5      0.10      38.9       0.0                          
+    0:04:55   97120.9      0.08      29.8       0.0                          
+    0:04:57   97114.3      0.10      40.8       0.0                          
+    0:04:59   97115.0      0.08      32.2       0.0                          
+    0:05:01   97123.4      0.09      33.5       0.0                          
+    0:05:02   97123.2      0.07      26.4       0.0                          
+    0:05:02   97124.9      0.06      21.5       0.0                          
+    0:05:03   97125.2      0.04      12.9       0.0                          
+    0:05:04   97126.2      0.04      12.4       0.0                          
+    0:05:05   97129.6      0.04      12.1       0.0                          
+    0:05:06   97130.4      0.04      12.6       0.0                          
+    0:05:07   97131.1      0.04      11.6       0.0                          
+    0:05:07   97132.4      0.03       8.8       0.0                          
+    0:05:08   97132.7      0.03       8.8       0.0                          
+    0:05:09   97131.9      0.03       8.8       0.0                          
+    0:05:09   97131.9      0.03       8.8       0.0                          
+    0:05:10   97131.9      0.03       8.8       0.0                          
+    0:05:10   97131.9      0.03       8.8       0.0                          
+    0:05:10   97131.9      0.03       8.8       0.0                          
+    0:05:11   97127.2      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:05:11   97127.2      0.00       0.0       0.0                          
+    0:05:11   97127.2      0.00       0.0       0.0                          
+    0:05:12   97127.2      0.00       0.0       0.0                          
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:05:12   97127.2      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:05:12   97127.2      0.00       0.0       0.0                          
+    0:05:12   97127.2      0.00       0.0       0.0                          
+    0:06:03   97099.8      0.00       0.0       0.0                          
+    0:06:03   97097.3      0.00       0.0       0.0                          
+    0:06:04   97096.0      0.01       1.0       0.0                          
+    0:06:04   97094.9      0.01       1.1       0.0                          
+    0:06:04   97093.9      0.01       1.2       0.0                          
+    0:06:04   97093.9      0.01       1.2       0.0                          
+    0:06:06   97092.8      0.00       0.0       0.0                          
+    0:06:06   97084.3      0.04       3.2       0.0                          
+    0:06:07   97084.3      0.04       3.2       0.0                          
+    0:06:07   97084.3      0.04       3.2       0.0                          
+    0:06:07   97084.3      0.04       3.2       0.0                          
+    0:06:07   97084.3      0.04       3.2       0.0                          
+    0:06:07   97084.3      0.04       3.2       0.0                          
+    0:06:08   97091.1      0.00       0.0       0.0                          
+    0:06:09   97027.9      0.00       0.0       0.0                          
+    0:06:10   96963.6      0.00       0.0       0.0                          
+    0:06:10   96899.2      0.00       0.0       0.0                          
+    0:06:11   96835.1      0.00       0.0       0.0                          
+    0:06:12   96770.7      0.00       0.0       0.0                          
+    0:06:12   96706.3      0.00       0.0       0.0                          
+    0:06:13   96641.9      0.00       0.0       0.0                          
+    0:06:14   96577.8      0.00       0.0       0.0                          
+    0:06:14   96513.4      0.00       0.0       0.0                          
+    0:06:15   96449.1      0.00       0.0       0.0                          
+    0:06:16   96384.4      0.00       0.0       0.0                          
+    0:06:16   96313.8      0.00       0.0       0.0                          
+    0:06:16   96243.3      0.00       0.0       0.0                          
+    0:06:17   96172.7      0.00       0.0       0.0                          
+    0:06:17   96102.1      0.00       0.0       0.0                          
+    0:06:18   96031.6      0.00       0.0       0.0                          
+    0:06:18   95961.0      0.00       0.0       0.0                          
+    0:06:19   95890.5      0.00       0.0       0.0                          
+    0:06:19   95819.9      0.00       0.0       0.0                          
+    0:06:20   95756.1      0.00       0.0       0.0                          
+    0:06:20   95697.3      0.00       0.0       0.0                          
+    0:06:21   95638.5      0.00       0.0       0.0                          
+    0:06:22   95579.7      0.00       0.0       0.0                          
+    0:06:23   95520.9      0.00       0.0       0.0                          
+    0:06:23   95462.1      0.00       0.0       0.0                          
+    0:06:24   95403.3      0.00       0.0       0.0                          
+    0:06:25   95344.5      0.00       0.0       0.0                          
+    0:06:25   95285.7      0.00       0.0       0.0                          
+    0:06:26   95226.9      0.00       0.0       0.0                          
+    0:06:27   95168.1      0.00       0.0       0.0                          
+    0:06:28   95109.3      0.00       0.0       0.0                          
+    0:06:28   95050.5      0.00       0.0       0.0                          
+    0:06:32   94983.5      0.00       0.0       0.0                          
+    0:06:37   94922.6      0.00       0.0       0.0                          
+    0:06:42   94864.4      0.00       0.0       0.0                          
+    0:06:47   94803.5      0.00       0.0       0.0                          
+    0:06:53   94749.7      0.00       0.0       0.0                          
+    0:06:54   94703.8      0.00       0.0       0.0                          
+    0:07:00   94642.3      0.00       0.0       0.0                          
+    0:07:05   94581.2      0.00       0.0       0.0                          
+    0:07:11   94522.4      0.00       0.0       0.0                          
+    0:07:15   94461.2      0.00       0.0       0.0                          
+    0:07:19   94402.1      0.00       0.0       0.0                          
+    0:07:23   94341.3      0.00       0.0       0.0                          
+    0:07:27   94281.3      0.00       0.0       0.0                          
+    0:07:31   94220.4      0.00       0.0       0.0                          
+    0:07:34   94158.7      0.00       0.0       0.0                          
+    0:07:38   94097.2      0.00       0.0       0.0                          
+    0:07:43   94036.1      0.00       0.0       0.0                          
+    0:07:47   93975.2      0.00       0.0       0.0                          
+    0:07:50   93918.5      0.00       0.0       0.0                          
+    0:07:52   93870.3      0.00       0.0       0.0                          
+    0:07:53   93819.1      0.00       0.0       0.0                          
+    0:07:54   93770.0      0.00       0.0       0.0                          
+    0:07:55   93718.0      0.00       0.0       0.0                          
+    0:07:56   93667.4      0.00       0.0       0.0                          
+    0:07:57   93618.9      0.00       0.0       0.0                          
+    0:07:58   93567.5      0.00       0.0       0.0                          
+    0:07:59   93516.0      0.00       0.0       0.0                          
+    0:08:00   93464.0      0.00       0.0       0.0                          
+    0:08:01   93412.2      0.00       0.0       0.0                          
+    0:08:02   93362.0      0.00       0.0       0.0                          
+    0:08:03   93311.4      0.00       0.0       0.0                          
+    0:08:04   93262.3      0.00       0.0       0.0                          
+    0:08:04   93212.6      0.00       0.0       0.0                          
+    0:08:06   93154.7      0.00       0.0       0.0                          
+    0:08:08   93117.3      0.00       0.0       0.0                          
+    0:08:08   93115.0      0.00       0.0       0.0                          
+    0:08:09   93101.3      0.00       0.0       0.0                          
+    0:08:11   93061.3      0.00       0.0       0.0                          
+    0:08:12   93059.5      0.00       0.0       0.0                          
+    0:08:18   93056.9      0.00       0.0       0.0                          
+    0:08:24   93056.6      0.00       0.0       0.0                          
+    0:08:25   93041.9      0.00       0.0       0.0                          
+    0:08:26   93025.7      0.00       0.0       0.0                          
+    0:08:28   93011.0      0.00       0.0       0.0                          
+    0:08:30   92998.1      0.00       0.0       0.0                          
+    0:08:31   92992.2      0.04      17.0       0.0                          
+    0:08:31   92991.9      0.04      17.0       0.0                          
+    0:08:31   92991.9      0.04      17.0       0.0                          
+    0:08:31   92991.9      0.04      17.0       0.0                          
+    0:08:32   92991.9      0.04      17.0       0.0                          
+    0:08:32   92991.9      0.04      17.0       0.0                          
+    0:08:32   92991.9      0.04      17.0       0.0                          
+    0:08:34   92995.0      0.00       0.0       0.0                          
+    0:09:15   92992.4      0.00       0.0       0.0                          
+    0:09:18   92989.9      0.00       0.0       0.0                          
+    0:09:18   92987.6      0.00       0.0       0.0                          
+    0:09:19   92985.3      0.00       0.0       0.0                          
+    0:09:19   92984.8      0.00       0.0       0.0                          
+    0:09:20   92984.8      0.00       0.0       0.0                          
+    0:09:20   92984.8      0.00       0.0       0.0                          
+    0:09:21   92979.3      0.01       0.3       0.0                          
+    0:09:21   92977.8      0.01       0.6       0.0                          
+    0:09:21   92977.8      0.01       0.6       0.0                          
+    0:09:21   92977.8      0.01       0.6       0.0                          
+    0:09:22   92977.8      0.01       0.6       0.0                          
+    0:09:22   92977.8      0.01       0.6       0.0                          
+    0:09:22   92977.8      0.01       0.6       0.0                          
+    0:09:24   92959.0      0.00       0.0       0.0                          
+Loading db file '/home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'CC_TOP' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u_cmp1/clk': 35937 load(s), 1 driver(s)
+1
+# ---------------------------------------
+# Step 6: Analyze and resolve design problems
+# ---------------------------------------
+check_design  > $design_name.check_design.rpt
+report_constraint -all_violators -verbose -sig 10 > $design_name.all_viol.rpt
+report_design                             > $design_name.design.rpt
+report_area -physical -hierarchy          > $design_name.area.rpt
+report_timing -nworst 10 -max_paths 10    > $design_name.timing.rpt
+report_power -analysis_effort high        > $design_name.power.rpt
+report_cell                               > $design_name.cell.rpt
+report_qor                                > $design_name.qor.rpt
+report_reference                          > $design_name.reference.rpt
+report_resources                          > $design_name.resources.rpt
+report_hierarchy -full                    > $design_name.hierarchy.rpt
+report_threshold_voltage_group            > $design_name.vth.rpt
+# ---------------------------------------
+# Step 7: Save the design database
+# ---------------------------------------
+write -hierarchy -format verilog -output  $design_name.netlist.v
+Writing verilog file '/home/SOC43/Project3/CacheController/SYN/OUTPUT_TOP/CC_TOP.netlist.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 28 nets to module CC_TOP using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write -hierarchy -format ddc     -output  $design_name.ddc
+Writing ddc file 'CC_TOP.ddc'.
+1
+write_sdf -version 1.0                    $design_name.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/SOC43/Project3/CacheController/SYN/OUTPUT_TOP/CC_TOP.sdf'. (WT-3)
+1
+write_sdc                                 $design_name.sdc
+1
+exit
+
+Memory usage for this session 855 Mbytes.
+Memory usage for this session including child processes 855 Mbytes.
+CPU usage for this session 617 seconds ( 0.17 hours ).
+Elapsed time for this session 619 seconds ( 0.17 hours ).
+
+Thank you...

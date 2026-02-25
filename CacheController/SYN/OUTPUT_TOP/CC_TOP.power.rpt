@@ -1,0 +1,83 @@
+Loading db file '/home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db'
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : CC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Feb 25 19:55:26 2026
+****************************************
+
+
+Library(s) Used:
+
+    um28nchllogl35udl140f_ssgwc0p81v125c (File: /home/ScalableArchiLab/UMC/um28nchllogl35udl140f_ssgwc0p81v125c.db)
+
+
+Operating Conditions: SSGWC0P81V125C   Library: um28nchllogl35udl140f_ssgwc0p81v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CC_TOP                 ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_CFG                 ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_DATA_REORDER_UNIT   ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0_1
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH16_DATA_WIDTH4_AFULL_THRESHOLD14_AEMPTY_THRESHOLD0
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_DECODER             ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_TAG_COMPARATOR_1    ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_DATA_FILL_UNIT      ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH32_DATA_WIDTH1_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH32_DATA_WIDTH518_AFULL_THRESHOLD30_AEMPTY_THRESHOLD0
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_SERIALIZER          ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_WAY                 ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH8_DATA_WIDTH32_AFULL_THRESHOLD6_AEMPTY_THRESHOLD0_0
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_TAG_COMPARATOR_0    ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_0_DW01_inc_9
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_1_DW01_inc_10
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+CC_FIFO_FIFO_DEPTH256_DATA_WIDTH67_AFULL_THRESHOLD252_AEMPTY_THRESHOLD0_DW01_inc_2_DW01_inc_11
+                       ZeroWLM           um28nchllogl35udl140f_ssgwc0p81v125c
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  26.8588 mW   (98%)
+  Net Switching Power  = 484.0955 uW    (2%)
+                         ---------
+Total Dynamic Power    =  27.3429 mW  (100%)
+
+Cell Leakage Power     =   4.2517 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          26.7564        1.4360e-03        2.5951e+06           29.3530  (  92.92%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  9.6667e-02            0.4826        1.6566e+06            2.2359  (   7.08%)
+--------------------------------------------------------------------------------------------------
+Total             26.8530 mW         0.4841 mW     4.2517e+06 nW        31.5889 mW
+1
