@@ -1,2 +1,0 @@
-CacheController/SIM/OUTPUT/dump.vcd filter=lfs diff=lfs merge=lfs -text
-CacheController/SYN/OUTPUT_TOP/*.sdf filter=lfs diff=lfs merge=lfs -text

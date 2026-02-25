@@ -1,0 +1,5 @@
+CacheController/SIM/OUTPUT/
+CacheController/SIM/sim_result.png
+
+CacheController/SYN/OUTPUT_TOP/*
+!CacheController/SYN/OUTPUT_TOP/*.rpt
