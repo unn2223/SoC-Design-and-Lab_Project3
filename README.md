@@ -1,8 +1,8 @@
 ﻿# 2-Way Read-Only Cache Controller (AXI Read, 64B Line, WRAP Burst)
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/cfa5ea71-9d99-4ea2-9231-4cccf8497ff8" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/cfa5ea71-9d99-4ea2-9231-4cccf8497ff8" />
 
 
-<img width="600" height="330" alt="image" src="https://github.com/user-attachments/assets/7bcef999-7890-46a6-9b25-48816c62d156" />
+<img width="400" height="220" alt="image" src="https://github.com/user-attachments/assets/7bcef999-7890-46a6-9b25-48816c62d156" />
 
 
 ## 1. 프로젝트 소개
